@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="./js/validacion.js"></script>
+    
+</head>
+<body>
+    <p>Había una vez un patito que decía miau miau y ese pato 
+        quería aprender a usar diferentes tipos de formularios
+        <br>
+        Existen dos métodos principales para la obtención de los 
+        datos de un formulario web, para lo cual aquí lo explicaremos:
+    </p>
+    <br>
+    <h1>GET: </h1>Este método es el estándar como salida del navegador 
+        mediante el cual se resuelve una petición por parte del cliente, asi
+        mismo en la salida estándar(URL), se pude visualizar los datps enviados 
+        mediante el formulario.
+
+        <br>
+        <h1>POST: </h1> Este método es el más utilizado para el envio de 
+        información desde un formulario atendiendo una petición por parte del 
+        cliente, actuando para poder agregar o insertar nuevos datos en una BD
+        asi mismo a diferencia del método get, este utiiliza un tipo de seguridad madiante el 
+        cual la información por el cual la información por medio de la salida exterior 
+        no es visible en el navegador
+
+        <br>
+        <div class="Container">
+            <form name="formulario" method="get" onsubmit="return validar(this)">
+                <br>
+                <label>Nombre:</label>
+                <br>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label>Edad:</label>
+                <br>
+                <input type="text" name="edad" id="edad" min="01" max="99">
+                <br>
+                <label>Fecha de Nacimiento</label>
+                <br>
+                <input type="Date" name="fecha" id="miento">
+                <br>
+                <label>Email:</label>
+                <br>
+                <input type="mail" name="correo" id="correo">
+                <br>
+                <input type="submit" name="enviar" value="Enviar datos del registro">
+                <input type="reset" name="borrar" value="Borrar Datos">
+            </form>
+        </div>
+        <div class="Tarea">
+            Validar campo de fecha 
+        </div>
+
+        
+</body>
+</html>

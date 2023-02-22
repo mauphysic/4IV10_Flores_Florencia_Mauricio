@@ -5,8 +5,10 @@
 }
 
 body{
-    background-image: url(../Imagenes/fondo.jpg);
-    color: blue;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Img/th.jpg);
+    color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,8 +16,8 @@ body{
 }
 
 .userlogin{
-    background-color: rgb(212, 255, 127);
-    height: 400px;
+    background-color: rgb(127, 163, 255);
+    height: 500px;
     width: 400px;
     border-radius: 15px solid rgb(80, 200, 400);
     margin-top: 10%;
@@ -28,7 +30,7 @@ body{
     text-transform: uppercase;
     font-size: 10px;
     padding-top: 10px;
-    color: chocolate;
+    color: black;
 }
 
 .userid{
@@ -57,7 +59,7 @@ body{
 .userpassword h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     float: left;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-right: 5px;
     padding-left: 5px;
 }
@@ -70,18 +72,18 @@ body{
 }
 
 .buttons{
-    margin-top: 20px;
+    margin-top: 60px;
     display: inline-flex;
 }
 
 .buttons img{
-    float: left;
+    float: center;
 }
 
 .buttons button{
     border-radius: 15px;
-    width: 120px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 .buttons p{
@@ -91,6 +93,15 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+
+.Enlace{
+    display: inline-flex;
+    background-color: darkgrey;
+    padding: 15px 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
 
 a{
     margin-top: 20px;
