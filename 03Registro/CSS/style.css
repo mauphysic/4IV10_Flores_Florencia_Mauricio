@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Inicio p{
+    text-align: center;
+    background-color: cadetblue;
+}
+
+.borde1{
+    border-bottom: solid 3px;
+    background-color: black;
+}
+
+.borde2{
+    border-bottom: solid 3px;
+    background-color: black;
+}
+
+.borde3{
+    border-bottom: solid 3px;
+    background-color: black;
+}
+
+.Container{
+    color:aliceblue;
+    text-align-last: center;
+    background-color: black;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    align-items: center;
+    background-image: url(../Imagenes/form.jpeg);
+    align-content: center;
+}
+
+.Get{
+    background-color: darkgray;
+}
+
+.Post{
+    background-color: darkgrey;
+}

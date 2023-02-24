@@ -17,80 +17,98 @@ CONST es una constante
 
 */
 
-function validar(formulario){
-
-    if(formulario.nombre.value.length <= 3){
-        alert("Favor de ingresar más de tres caracteres");
-        formulario.nombre.focus();
-        return false;
-    }    
-    var checarAbc = "qwertyuiolpasdfghjklñzxvcbnm" + "QWERTYUIOPASDFGHJKLÑZXCVBNMÑ";
-
+function validar(formulario) {
+    if (formulario.nombre.value.length <= 3) {
+      alert("Favor de ingresar más de 3 caracteres en el campo nombre");
+      formulario.nombre.focus();
+      return false;
+    }
+    var checarABC = "qazwsxedcrfvtgbyhnujmikolpñ" + "QAZWSXEDCRFVTGBYHNUJMIKOLPÑ";
+  
     var cadenaNombre = formulario.nombre.value;
-
-    //alert(cadenaNombre)
-
+  
+  
     var todoesvalido = true;
-
-    for(var i=0; i <cadenaNombre.length; i++){
-        var caracteres = cadenaNombre.charAt(i);
-        for(var j = 0; j < checarAbc.length; j++){
-            if(caracteres == checarAbc.charAt(j)){
-                break;
-            }
+  
+    for (var i = 0; i < cadenaNombre.length; i++) {
+      var caracteres = cadenaNombre.charAt(i);
+      for (var j = 0; j < checarABC.length; j++) {
+        if (caracteres == checarABC.charAt(j)) {
+          break;
         }
-        if (j == checarAbc.length){
-            todoesvalido = false;
-            break;
-        }
+      }
+      if (j == checarABC.length) {
+        todoesvalido = false;
+        break;
+      }
     }
-    if(!todoesvalido){
-        alert("No pongas números");
-        formulario.nombre.focus();
-        return false;
+    if (!todoesvalido) {
+      alert("Ingresa solo letras en el campo nombre");
+      formulario.nombre.focus();
+      return false;
     }
-
-    var edad = parseInt(formulario.edad.value)
-    alert(edad)
-    if((edad<1 ) || (edad > 99)){
-        alert("Nel perro");
-        formulario.edad.focus();
-        return false;
-    }    
-    var checarAbc = "0123456789";
-
+  
+    var edad = parseInt(formulario.edad.value);
+  
+  
+    if (edad < 0 || edad >= 99) {
+      alert("Ingresa una edad valida entre 01 y 99 años");
+      formulario.edad.focus();
+      return false;
+    }
+    var checarABC = "0123456789";
+  
     var cadenaNombre = formulario.edad.value;
-
-    //alert(cadenaNombre)
-
+  
+  
     var todoesvalido = true;
-
-    for(var i=0; i <cadenaNombre.length; i++){
-        var caracteres = cadenaNombre.charAt(i);
-        for(var j = 0; j < checarAbc.length; j++){
-            if(caracteres == checarAbc.charAt(j)){
-                break;
-            }
+  
+    for (var i = 0; i < cadenaNombre.length; i++) {
+      var caracteres = cadenaNombre.charAt(i);
+      for (var j = 0; j < checarABC.length; j++) {
+        if (caracteres == checarABC.charAt(j)) {
+          break;
         }
-        if (j == checarAbc.length){
-            todoesvalido = false;
-            break;
-        }
+      }
+      if (j == checarABC.length) {
+        todoesvalido = false;
+        break;
+      }
     }
-    if(!todoesvalido){
-        alert("Que no");
-        formulario.nombre.focus();
-        return false;
+    if (!todoesvalido) {
+      alert("Ingresa solo numeros en el campo edad");
+      formulario.edad.focus();
+      return false;
     }
 
-    //es obtener el campo de correo
-    var email = formulario.correo.value
+    let ingreso = document.getElementById("miento").value;
+    let d = new Date(ingreso);
+  
+    if (!!d.valueOf()) {
+      año = parseInt(d.getFullYear());
+      mes = parseInt(d.getMonth());
+      dia = parseInt(d.getDate());
+    }
+  
+    let fecha_actual = new Date();
+    let año_actual = fecha_actual.getFullYear();
+  
+    let fechaFebrero = new Date("2023-02-28");
+    let mesFebrero = fechaFebrero.getMonth();
+    let diaFebrero = fechaFebrero.getDate();
+  
+    if (mes == mesFebrero && dia > diaFebrero) {
+      alert("Febrero no tiene mas de 28 dias");
+      return false;
+    }
+  
+    if (año > añoActual || año < "1940") {
+      alert("No se puede ingresar ese año ");
+      return false;
+    }
 
-    //vamos a crear una expresión regular
-    var prueba = /([Aa-Zz] + [0-9] + \. ){10}\@ ([Aa-Zz] + [0-9] ){8}\. ([Aa-Zz] + [0-9] + \. ){3} /g;
 
-    alert("Email " + (prueba.test(email) ? " " : " No ") + "Válido");
+   }
 
-    return prueba.test;
 
-}
+    
