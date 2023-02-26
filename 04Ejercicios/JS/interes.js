@@ -12,17 +12,29 @@ function validarn(e){
 
 function interes(){
     var valor = document.getElementById("cantidad").value;
+    var tiempo = document.getElementById("meses").value;
 
-    var result = parseInt(valor)
+    if(valor > 100000000 || tiempo > 36 || valor.length == 0 || tiempo.length == 0){
+        alert("Opcion inválida");
+        formulario.cantidad.focus();
+        return false;
+    }
 
-    var interes = result * 0.02;
+    var result = parseInt(valor);
 
-    var total = interes + result;
+    var meses = parseInt(tiempo);
+
+    var interes = result * 0.08;
+
+    var interes2 = interes * meses;
+
+    var total = result + interes2;
 
     document.getElementById("cantidad1").value = "$ " + total;
 }
 
-function del() {
+function del1() {
     document.getElementById("cantidad").value = "";
     document.getElementById("cantidad1").value = "";
+    document.getElementById("meses").value="";
 }

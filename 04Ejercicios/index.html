@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de interés</title>
+    <title>Ejercicios de validación</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <div class="Contenedor">
+    <div class="Contenedor1">
         <form action="" method="get" name="formulario">
             <label>
-                formulario para el cálculo de funciones de interés al 2% mensual del banco patitos que dicen miau miau
+                Problema 1: formulario para el cálculo de funciones de interés al 8%
             </label>
             <br>
             <div class="table">
@@ -20,12 +21,18 @@
                     <td><input type="text" id="cantidad" onkeypress="return validarn(event)"></td>
                 </tr>
                 <tr>
+                    <td>Teclea el número de meses (máximo 36)</td>
+                    <td>
+                        <input type="text" id="meses" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
                     <td></td>
                     <td><input type="button" name="inveritr" value="Calcular interés" onclick="return interes()"></td>
                 </tr>
                 <tr>
                     <td>
-                        Su sueldo total con el interés del 2% mensual es de:
+                        Su sueldo total con el interés del 8% es de:
                     </td>
                     <td>
                         <input type="text" name="sueldo1" id="cantidad1" readonly="readonly" class="input_text">
@@ -33,13 +40,548 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td> <input type="button" name="borrar" value="borrar datos" onclick="return del()"></td>
+                    <td> <input type="button" name="borrar" value="borrar datos" onclick="return del1()"></td>
                 </tr>
             </table>
             </div>
         </form>
         <script src="./JS/interes.js"></script>
     </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+    <div class="Contenedor2">
+        <form action="" method="get" name="formulario2">
+            <label>
+                Problema 2: Cálculo de sueldo ganado por comisiones del 10% por 5 ventas y reducción de impuestos del 12%
+            </label>
+            <br>
+            <div class="table2">
+                <table id="comisiones" name="tabla2">
+                    <tr>
+                        <td>
+                            Introduce tu salario
+                        </td>
+                        <td>
+                            <input type="text" id="s_inicial" onkeypress="return validars(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="calcular" value="Calcular ganancia" onclick="return sueldof()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tu ganancia total es de:
+                        </td>
+                        <td>
+                            <input type="text" name="ganancia" id="cantidad2" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="return del2()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/comisiones.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+    <div class="Contenedor1">
+        <form action="" method="get" name="formulario3">
+            <label>
+              Problema3: Tienda de productos
+            </label>
+            <div class="table3">
+                <table>
+                    <tr>
+                        <td>Productos</td>
+                    </tr>
+                    <tr>
+                        <td>Doritos</td>
+                    </tr>
+                    <tr>
+                        <td>Sabritas</td>
+                    </tr>
+                    <tr>
+                        <td>Chetos</td>
+                    </tr>
+                    <tr>
+                        <td>Takis</td>
+                    </tr>
+                    <tr>
+                        <td>Pake-Taxo</td>
+                    </tr>
+                    <tr>
+                        <td>Chips</td>
+                    </tr>
+                    <tr>
+                        <td>Pingüinos</td>
+                    </tr>
+                    <tr>
+                        <td>Gansito</td>
+                    </tr>
+                    <tr>
+                        <td>Choco-roles</td>
+                    </tr>
+                    <tr>
+                        <td>Leche</td>
+                    </tr>
+                    <tr>
+                        <td>Yogurt</td>
+                    </tr>
+                    <tr>
+                        <td>Queso</td>
+                    </tr>
+                    <tr>
+                        <td>Crema</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <table>
+                   <tr>
+                    <td>
+                        Introduce el nombre del producto
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" id="nombre_p">
+                    </td>
+                   </tr> 
+                   <tr>
+                    <td>
+                        Introduce la marca del producto
+                    </td>
+                    <td>
+                        <input type="text" name="marca" id="marca_p">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                        Introduce el tipo de producto
+                    </td>
+                    <td>
+                        <input type="text" name="tipo" id="tipo_p">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                        Introduce el precio del producto
+                    </td>
+                    <td>
+                        <input type="text" name="precio" id="precio_p" onkeypress="return validarp(event)">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" name="calcular" value="Calcular precio" onclick="return calcularp()">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>El precio del producto con descuento es de</td>
+                    <td>
+                        <input type="text" name="total" id="precio_f" readonly="readonly" class="input_text">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" name="borrar" value="Borrar" onclick="return del3()">
+                    </td>
+                   </tr>
+                </table>
+
+            </div>
+        </form>
+        <script src="./JS/tienda.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+    <div class="Contenedor2">
+        <form action="" method="get" name="formulario4">
+            Problema 4: Algoritmos Promedio Final
+            <div class="table4">
+                <table>
+                    <tr>
+                        <td>Teclea tu calificación del primer parcial</td>
+                        <td>
+                            <input type="text" name="1erparcial" id="1" onkeypress="return validarcal(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea tu calificación del segundo parcial</td>
+                        <td>
+                            <input type="text" name="2doparcial" id="2" onkeypress="return validarcal(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea tu calificación del tercer parcial</td>
+                        <td>
+                            <input type="text" name="3erparcial" id="3" onkeypress="return validarcal(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea tu calificación del examen final</td>
+                        <td>
+                            <input type="text" name="final" id="ex_final" onkeypress="return validarcal(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea tu calificación del proyecto final</td>
+                        <td>
+                            <input type="text" name="proyecto" id="p_final" onkeypress="return validarcal(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="calcular" value="Calcular promedio" onclick="return calpromedio()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tu promedio final es de:</td>
+                        <td>
+                            <input type="text" name="final" id="promedio" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="return del4()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/promedio.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+    <div class="Contenedor1">
+        <form action="" method="get" name="formulario5">
+            <label>
+                Problema 5: Cálculo del porcentaje de los estudiantes hombres y mujeres y del total de alumnos
+            </label>
+            <div class="table5">
+                <table>
+                    <tr>
+                        <td>Teclea el total de alumnos hombres</td>
+                        <td>
+                            <input type="text" name="alumnos" id="hombres" onkeypress="return validarAl(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea el total de alumnas mujeres</td>
+                        <td>
+                            <input type="text" name="alumnas" id="mujeres" onkeypress="return validarAl(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="calcular" value="Calcular alumnos" onclick="return calculoAl()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>El porcentaje de hombres es de</td>
+                        <td>
+                            <input type="text" name="prctjeh" id="totalh" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>El porcentaje de mujeres es</td>
+                        <td>
+                            <input type="text" name="prctjem" id="totalm" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>El 100% de elumnos es de</td>
+                        <td>
+                            <input type="text" name="total" id="totala" readonly="readonly" class="input_text"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="return del5()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/alumnos.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+    <div class="Contenedor2">
+        <form action="" method="get" name="formulario 6">
+            <label>
+                Problema 6: Cálculo de la edad de una persona
+            </label>
+            <div class="table6">
+                <table>
+                    <tr>
+                        <td>
+                            Introduce tu fecha de nacimiento
+                        </td>
+                        <td>
+                            <input type="date" name="nac" id="fecha_nac" min="01/01/1933">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="calcular" value="Calcular edad" onclick="return calcularEdad()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tu edad es de</td>
+                        <td>
+                            <input type="text" name="edad" id="edad" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/edad.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+
+    <div class="Contenedor1">
+        <form action="" method="get" name="formulario 7">
+            <label>Problema 7: Operaciones</label>
+            <div class="table7">
+                <table>
+                    <tr>
+                        <td>Operaciones</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Si num1 = num2, estos se multiplicarán
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Si num1 > num2, el primero se elevará a la potencia num2</td>
+                    </tr>
+                    <tr>
+                        <td>Si num1 es menor que num2, el segundo se dividirá entre el primero</td>
+                    </tr>
+                    <tr>
+                        <td>Teclea el primer numero</td>
+                        <td>
+                            <input type="text" name="numero1" id="num1" onkeypress="return validarop(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea el segundo numero</td>
+                        <td>
+                            <input type="text" name="numero2" id="num2" onkeypress="return validarop(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="calcular" value="Realizar cálculo" onclick="return calcularnums()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            El resultado es
+                        </td>
+                        <td>
+                            <input type="text" name="resultado" id="result" readonly="readonly">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="return del7()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/nums.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+    <div class="Contenedor2">
+        <form action="" method="get" name="formulario 8 ">
+            <label>
+                Problema 8: Imprimir el número mayor
+            </label>
+            <div class="table8">
+                <table>
+                    <tr>
+                        <td>Teclea el primer número</td>
+                        <td>
+                            <input type="text" name="1er numero" id="1ero" onkeypress="return validarMay(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea el segundo número</td>
+                        <td>
+                            <input type="text" name="2do numero" id="2do" onkeypress="return validarMay(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea el tercer numero</td>
+                        <td>
+                            <input type="text" name="3er numero" id="3ero" onkeypress="return validarMay(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="numMayor" value="Hallar el número mayor" onclick="return HallarMay()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>El numero mayor es</td>
+                        <td>
+                            <input type="text" name="resultado" id="mayor2" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="return del8()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/numMayor.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+    <div class="Contenedor1">
+        <form action="" method="get" name="formulario 9">
+            <label>
+                Problema 9: Sueldo por horas extras
+            </label>
+            <div class="table 9">
+                <table>
+                    <tr>
+                        <td>Teclea cuánto ganas por hora</td>
+                        <td>
+                            <input type="text" name="sueldo" id="sueldoh" onkeypress="return validarh(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Teclea las horas trabajadas
+                        </td>
+                        <td>
+                            <input type="text" name="hrs" id="hrst" onkeypress="return validarh(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="calcular" value="Calcular sueldo" onclick="return calcularsue()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tu sueldo total es de</td>
+                        <td>
+                            <input type="text" name="sueldof" id="sueldotot" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="return del9()"> 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/horasex.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
+    <br>
+
+    <div class="Contenedor2">
+        <form action="" method="get" name="formulario 10">
+            <label>
+                Problema 10: Calcular la ganancia por utilidades del trabajador anualmente
+            </label>
+            <div class="table10">
+                <table>
+                    <tr>
+                        <td>Teclea la cantidad de años que llevas trabajando en la empresa</td>
+                        <td>
+                            <input type="text" name="años" id="añost" onkeypress="return validaraños(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea los meses que has trabajado</td>
+                        <td>
+                            <input type="text" name="meses" id="mesest" onkeypress="return validaraños(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teclea tu salario</td>
+                        <td>
+                            <input type="text" name="salario" id="sal" onkeypress="return validaraños(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="calcular" value="Calcular utilidades" onclick="return calcutil()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tus utilidades anuales son de</td>
+                        <td>
+                            <input type="text" name="util" id="idades" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="return del10()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/utilidades.js"></script>
+    </div>
+    <br>
+    <p class="borde"></p>
     
 </body>
 </html>

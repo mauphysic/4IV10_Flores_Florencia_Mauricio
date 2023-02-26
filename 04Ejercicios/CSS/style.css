@@ -1,0 +1,19 @@
+
+
+body{
+    text-align: center;
+    background-color: darkblue;
+}
+
+.borde{
+    border-bottom: solid 3px;
+    background-color: black;
+}
+
+.Contenedor1{
+    background-color: aquamarine;
+}
+
+.Contenedor2{
+    background-color: cadetblue;
+}
