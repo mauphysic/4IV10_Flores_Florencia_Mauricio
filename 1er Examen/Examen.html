@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="bienvenida">
+    <h1>Banco te estafo</h1>
+    <p>Tabla de interés compuesto de préstamo para invertir en un terreno (Playa)
+    </p>
+    <p>Con una tasa de interés compuesto al 72 % anual bajo un préstamo de :</p>
+    </div>
+    <br>
+    <br>
+    <div class="inversion">
+        <form action="" method="get" name="formulario">
+            <div class="table">
+                <table>
+                    <tr>
+                        <td>
+                            Introduce la cantidad a prestar (Mínimo: $1000,  Máximo: $1000000)
+                        </td>
+                        <td>
+                            <input type="number" id="pres" onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Introduce los años que durará el préstamo (Mínimo: 1 año, Máximo: 20 años)
+                        </td>
+                        <td>
+                            <input type="number" id="años" min="1" max="20" onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="button" name="Calcular" value="Calcular préstamo" onclick="return calculo()">
+                        </td>
+                        <td>
+                            <input type="button" name="borrar" value="Borrar" onclick="return del()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/interes.js"></script>
+    </div>
+
+    </div>
+
+    <div class="Ganancias">
+        <table id="amortizacion">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>No. de pago</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Restante</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Cuota</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Interés</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Abono Capital</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><pre id="mes"></pre></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><pre id="dinero"></pre></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><pre id="cuota"></pre></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><pre id="interes"></pre></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><pre id="abono"></pre></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><pre id="texto"></pre></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><pre id="compuesto"></pre></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </div>
+    
+</body>
+</html>

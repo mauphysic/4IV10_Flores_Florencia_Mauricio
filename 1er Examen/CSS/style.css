@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.bienvenida h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.inversion {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  font-size: 18px;
+  color: #666;
+  vertical-align: middle;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Ganancias {
+  background-color: #fff;
+  padding: 20px;
+}
+
+#amortizacion {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#amortizacion td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}
+
+#amortizacion tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
