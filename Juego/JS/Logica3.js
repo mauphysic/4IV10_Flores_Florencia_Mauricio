@@ -13,7 +13,7 @@ function cargarIconos() {
     '<img src="./Imagenes/STARWARS-Img/sidious.ico" class="img">',
     '<img src="./Imagenes/STARWARS-Img/boba-fett.ico" class="img">',
     '<img src="./Imagenes/STARWARS-Img/stormtrooper.ico" class="img">',
-    '<img src="./Imagenes/STARWARS-Img/millenary.ico" class="img">',
+    '<img src="./Imagenes/STARWARS-Img/Millenary.ico" class="img">',
     '<img src="./Imagenes/STARWARS-Img/starkiller.ico" class="img">',
     '<img src="./Imagenes/STARWARS-Img/skywalker-kenobi.ico" class="img">',
     '<img src="./Imagenes/STARWARS-Img/R2-D2.ico" class="img">',
