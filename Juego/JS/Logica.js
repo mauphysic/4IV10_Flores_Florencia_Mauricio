@@ -70,7 +70,7 @@ function seleccion(i) {
         tarjeta1.style.transform = "rotateY(0deg)";
         tarjeta2.style.transform = "rotateY(0deg)";
         j += 1;
-        var restantes = 3 - j;
+        var restantes = 4 - j;
         if (restantes == 0) {
           alert("No te quedan más intentos. Fin del juego");
           tablero();
