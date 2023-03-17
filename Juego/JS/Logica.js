@@ -6,19 +6,19 @@ tablero();
 
 function cargarIconos() {
   iconos = [
-    '<img src="./Imagenes/Marvel-img/spider-man.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Reed.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Antorcha.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/thing.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Daredevil.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Iron-man.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Doom.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Galactus.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Doc-ock.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Thanos.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Adam.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/Deadpool.ico" class="img">',
-    '<img src="./Imagenes/Marvel-img/wolverine.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/spider-man.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Reed.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Antorcha.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/thing.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Daredevil.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Iron-man.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Doom.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Galactus.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Doc-ock.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Thanos.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Adam.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/Deadpool.ico" class="img">',
+    '<img src="./Imagenes/Marvel-Img/wolverine.ico" class="img">',
     '<link rel="stylesheet" href="./CSS/style.css" />',
   ];
 }
